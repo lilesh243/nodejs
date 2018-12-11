@@ -6,6 +6,7 @@ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 
 # install node.js
 apt install nodejs -y
+sudo npm install -g pm2
 
 # create systemd service
 cat > /etc/systemd/system/nodejs.service <<'EOF'
